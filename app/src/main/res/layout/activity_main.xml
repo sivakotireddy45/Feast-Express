@@ -28,7 +28,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="26dp"
         android:ems="10"
-        android:hint="Enter Password pin"
+        android:hint="@string/hint_pin"
         android:inputType="numberPassword"
         android:textColor="@color/mycolor"
         app:layout_constraintStart_toStartOf="parent"

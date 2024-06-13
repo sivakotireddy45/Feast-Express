@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">trail1</string>
+    <string name="hint_username">Enter Username</string>
+    <string name="hint_pin">Enter pin</string>
 </resources>
