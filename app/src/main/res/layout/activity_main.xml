@@ -10,7 +10,7 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/editextwidth"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="72dp"
@@ -23,7 +23,7 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/editextwidth"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:hint="Enter Password pin"
@@ -37,7 +37,7 @@
     <Button
         android:id="@+id/button"
         android:textColor="@color/black"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/editbuttonwidth"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="39dp"
