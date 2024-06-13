@@ -36,6 +36,7 @@
 
     <Button
         android:id="@+id/button"
+        android:onClick="myClickHandler"
         android:layout_width="@dimen/editbuttonwidth"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
