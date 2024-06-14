@@ -3,6 +3,7 @@ package com.example.trail1
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.util.Log
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -25,7 +26,19 @@ class MainActivity : AppCompatActivity() {
     fun myClickHandler(view: View) {
         Log.i("MainActivity","Button clicked")
        // var dialIntent:Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:987654398765"))
-        var webIntent :Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.google.com"))
-        startActivity(webIntent)
+       // var webIntent :Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.google.com"))
+       // startActivity(webIntent)
+        startTimer(message = "motor", seconds = 3)
+    }
+
+
+    fun startTimer(message: String, seconds: Int) {
+        val intent = Intent(AlarmClock.ACTION_SET_TIMER).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, message)
+            putExtra(AlarmClock.EXTRA_LENGTH, seconds)
+            putExtra(AlarmClock.EXTRA_SKIP_UI, true)
+        }
+            startActivity(intent)
+
     }
 }
