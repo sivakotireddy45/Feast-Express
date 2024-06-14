@@ -15,7 +15,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="Enter Username"
+        android:hint="@string/hint_username"
         android:inputType="text"
         android:textColor="@color/mycolor"
         app:layout_constraintStart_toStartOf="parent"
