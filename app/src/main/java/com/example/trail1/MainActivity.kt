@@ -1,5 +1,7 @@
 package com.example.trail1
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -22,5 +24,8 @@ class MainActivity : AppCompatActivity() {
 
     fun myClickHandler(view: View) {
         Log.i("MainActivity","Button clicked")
+       // var dialIntent:Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:987654398765"))
+        var webIntent :Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.google.com"))
+        startActivity(webIntent)
     }
 }
