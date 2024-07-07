@@ -1,6 +1,8 @@
 package com.example.feastexpress
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,15 @@ class WelcomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    fun register(view: View) {
+        var hIntent = Intent(this,RegistrationActivity::class.java)
+        startActivity(hIntent)
+    }
+
+    fun login(view: View) {
+        var hIntent = Intent(this,RegistrationActivity::class.java)
+        startActivity(hIntent)
     }
 }

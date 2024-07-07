@@ -1,18 +1,15 @@
-package com.example.feastexpress.ui.home
+package com.example.feastexpress.ui.slideshow
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.example.feastexpress.R
-import com.example.feastexpress.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class FavouriteFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+        val root = inflater.inflate(R.layout.fragment_favourite, container, false)
         return root
     }
 }
