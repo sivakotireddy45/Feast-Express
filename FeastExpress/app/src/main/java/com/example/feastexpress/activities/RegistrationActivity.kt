@@ -1,4 +1,4 @@
-package com.example.feastexpress
+package com.example.feastexpress.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,12 +7,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.feastexpress.MainActivity
+import com.example.feastexpress.R
 
-class WelcomeActivity : AppCompatActivity() {
+class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_welcome)
+        setContentView(R.layout.activity_registration)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -20,13 +22,13 @@ class WelcomeActivity : AppCompatActivity() {
         }
     }
 
-    fun register(view: View) {
-        var hIntent = Intent(this,RegistrationActivity::class.java)
+    fun login(view: View) {
+        var hIntent = Intent(this, LoginActivity::class.java)
         startActivity(hIntent)
     }
 
-    fun login(view: View) {
-        var hIntent = Intent(this,RegistrationActivity::class.java)
+    fun mainActivity(view: View) {
+        var hIntent = Intent(this, MainActivity::class.java)
         startActivity(hIntent)
     }
 }

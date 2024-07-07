@@ -1,4 +1,4 @@
-package com.example.feastexpress
+package com.example.feastexpress.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.feastexpress.MainActivity
+import com.example.feastexpress.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,12 +23,12 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun register(view: View) {
-        var hIntent = Intent(this,RegistrationActivity::class.java)
+        var hIntent = Intent(this, RegistrationActivity::class.java)
         startActivity(hIntent)
     }
 
     fun mainActivity(view: View) {
-        var hIntent = Intent(this,MainActivity::class.java)
+        var hIntent = Intent(this, MainActivity::class.java)
         startActivity(hIntent)
     }
 }
