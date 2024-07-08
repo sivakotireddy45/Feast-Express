@@ -28,4 +28,5 @@
     <string name="my_cart">My Cart</string>
     <string name="logout">logout</string>
     <string name="search">Search</string>
+    <string name="pizza">pizza</string>
 </resources>

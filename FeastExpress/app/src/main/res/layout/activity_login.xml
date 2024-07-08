@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.LoginActivity"
+    android:background="@drawable/bg_third">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -70,12 +71,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:onClick="mainActivity"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="48dp"
         android:layout_marginBottom="186dp"
+        android:onClick="mainActivity"
         android:text="@string/signin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/editText3"
@@ -96,11 +97,11 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="80dp"
         android:gravity="center"
-        android:text="@string/register"
         android:onClick="register"
+        android:text="@string/register"
         android:textColor="@color/purple_500"
         android:textSize="18sp"
         android:textStyle="bold"
