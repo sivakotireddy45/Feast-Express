@@ -1,12 +1,17 @@
-package com.example.feastexpress1;
+package com.example.feastexpress1.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.feastexpress1.MainActivity;
+import com.example.feastexpress1.R;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -20,5 +25,14 @@ public class RegistrationActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void login(View view) {
+        startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+    }
+
+    public void mainActivity(View view) {
+        startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+
     }
 }
