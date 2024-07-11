@@ -27,4 +27,8 @@
     <string name="dinner">Dinner</string>
     <string name="description_description_description">Description Description Description</string>
     <string name="discount">Discount</string>
+    <string name="name">Name</string>
+    <string name="your_favourite_and_tasty_food_is_here">Your Favourite and tasty food is here</string>
+    <string name="view_more">View more</string>
+    <string name="_10_weekend_delicious_n_dinner_recipes">10 Weekend Delicious \n Dinner Recipes</string>
 </resources>

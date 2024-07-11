@@ -1,16 +1,16 @@
 package com.example.feastexpress1.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.feastexpress1.R;
+import com.example.feastexpress1.activities.DetailedDailyMealActivity;
 import com.example.feastexpress1.models.DailyMealModel;
 
 import java.util.List;
@@ -38,6 +38,15 @@ public class DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.View
         holder.name.setText(list.get(position).getName());
         holder.discount.setText(list.get(position).getDiscount());
         holder.description.setText(list.get(position).getDescription());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, DetailedDailyMealActivity.class);
+                intent.putExtra("type",list.get(position).getType());
+                context.startActivity(intent);
+            }
+        });
 
 
     }
