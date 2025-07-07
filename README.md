@@ -16,7 +16,7 @@ The project was built using **Kotlin** in **Android Studio**, focusing on real-t
 ---
 
 ## 🛠️ Tech Stack
-- **Language**: Kotlin
+- **Language**: Java
 - **IDE**: Android Studio
 - **Architecture**: MVVM 
 - **Libraries**: Retrofit,  Firebase 
