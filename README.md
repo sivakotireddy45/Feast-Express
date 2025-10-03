@@ -14,6 +14,11 @@ The project was built using **Kotlin** in **Android Studio**, focusing on real-t
 - Collaborated with the backend and testing team to ensure timely releases
 
 ---
+![WhatsApp Image 2025-10-03 at 15 54 35_ba359976](https://github.com/user-attachments/assets/70909b58-2315-4a87-a866-22eccb93cf08)
+
+![WhatsApp Image 2025-10-03 at 15 54 35_0f2cc6f8](https://github.com/user-attachments/assets/25b2e794-39ee-4c9b-8522-07b479abcd56)
+
+
 
 ## 🛠️ Tech Stack
 - **Language**: Java
