@@ -27,6 +27,10 @@ The project was built using **Kotlin** in **Android Studio**, focusing on real-t
 - **Libraries**: Retrofit,  Firebase 
 
 ---
+### MVVM Architecture 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fswlh%2Funderstanding-mvvm-architecture-in-android-aa66f7e1a70b&psig=AOvVaw2bEh7Br8kVbWE_tghf32xm&ust=1759594053566000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiy0vy0iJADFQAAAAAdAAAAABAE
+
+MVVM (Model-View-ViewModel) is an Android architecture pattern that separates an app's user interface (UI) from its business and data logic, promoting code reusability, maintainability, and testability. It consists of three key components: the Model (data and business logic), the View (UI elements), and the ViewModel (holds presentation logic and acts as a bridge between the Model and View). The ViewModel prepares data for the View to display and receives user input from the View, which then updates the Model as needed
 
 ## 📲 Features
 - Browse and order food from nearby restaurants
